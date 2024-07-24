@@ -52,9 +52,9 @@ const creationList = [
 ];
 ---
 
-<section class="px-8 pb-16 flex flex-col gap-12">
-    <h2 class="text-center text-3xl uppercase font-light">our creations</h2>
-    <div class="grid grid-cols-1 gap-6">
+<section class="mx-8 pb-16 lg:pb-32 grid grid-cols-1 items-center  gap-12 max-w-[1088px] lg:mx-auto relative">
+    <h2 class="text-center lg:text-start text-3xl lg:text-4xl uppercase font-light">our creations</h2>
+    <div class="justify-self-center grid grid-cols-1 gap-6 lg:grid-cols-4">
         {
             creationList.map(data => 
             <a href="">
@@ -67,5 +67,5 @@ const creationList = [
             </a>)
         }
     </div>
-    <a href="#" class="self-center border-2 border-black uppercase px-6 py-3">see all</a>
+    <a href="#" class="w-fit self-center justify-self-center lg:justify-self-end border-2 border-black uppercase px-6 py-3 lg:absolute top-0 right-0 hover:bg-slate-950 hover:text-slate-50">see all</a>
 </section>

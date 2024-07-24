@@ -4,7 +4,7 @@ const { coverMobile, coverDesktop, nameOne, nameTwo } = Astro.props;
 
 <article class="relative">
     <picture>
-        <source srcset={coverMobile} media="(max-width: 768px)"/>
+        <source srcset={coverMobile} media="(max-width: 1024px)"/>
         <img src={coverDesktop} alt={`${nameOne} ${nameTwo}`}>
     </picture>
     <div class="absolute text-slate-50 z-10 bottom-4 left-4">
