@@ -1,0 +1,71 @@
+---
+import Project from "./Project.astro";
+const creationList = [
+    {
+        nameOne: 'deep',
+        nameTwo: 'earth',
+        coverMobile: 'public/mobile/image-deep-earth.jpg',
+        coverDesktop: 'public/desktop/image-deep-earth.jpg'
+    },
+    {
+        nameOne: 'night',
+        nameTwo: 'arcade',
+        coverMobile: 'public/mobile/image-night-arcade.jpg',
+        coverDesktop: 'public/desktop/image-night-arcade.jpg'
+    },
+    {
+        nameOne: 'soccer',
+        nameTwo: 'team vr',
+        coverMobile: 'public/mobile/image-soccer-team.jpg',
+        coverDesktop: 'public/desktop/image-soccer-team.jpg'
+    },
+    {
+        nameOne: 'the',
+        nameTwo: 'grid',
+        coverMobile: 'public/mobile/image-grid.jpg',
+        coverDesktop: 'public/desktop/image-grid.jpg'
+    },
+    {
+        nameOne: 'from up',
+        nameTwo: 'above vr',
+        coverMobile: 'public/mobile/image-from-above.jpg',
+        coverDesktop: 'public/desktop/image-from-above.jpg'
+    },
+    {
+        nameOne: 'pocket',
+        nameTwo: 'boreals',
+        coverMobile: 'public/mobile/image-pocket-borealis.jpg',
+        coverDesktop: 'public/desktop/image-pocket-borealis.jpg'
+    },
+    {
+        nameOne: 'the',
+        nameTwo: 'curiosity',
+        coverMobile: 'public/mobile/image-curiosity.jpg',
+        coverDesktop: 'public/desktop/image-curiosity.jpg'
+    },
+    {
+        nameOne: 'make it',
+        nameTwo: 'fisheye',
+        coverMobile: 'public/mobile/image-fisheye.jpg',
+        coverDesktop: 'public/desktop/image-fisheye.jpg'
+    }
+];
+---
+
+<section class="px-8 pb-16 flex flex-col gap-12">
+    <h2 class="text-center text-3xl uppercase font-light">our creations</h2>
+    <div class="grid grid-cols-1 gap-6">
+        {
+            creationList.map(data => 
+            <a href="">
+                <Project
+                 nameOne={data.nameOne}
+                 nameTwo={data.nameTwo}
+                 coverMobile={data.coverMobile}
+                 coverDesktop={data.coverDesktop}
+                />
+            </a>)
+        }
+    </div>
+    <a href="#" class="self-center border-2 border-black uppercase px-6 py-3">see all</a>
+</section>
